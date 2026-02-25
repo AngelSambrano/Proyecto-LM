@@ -88,9 +88,4 @@ select option {
     .botones {
         flex-direction: column;
     }
-
-    fieldset {
-        display: flex;
-        flex-direction: column;
-    }
 }
