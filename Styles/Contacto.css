@@ -90,6 +90,7 @@ select option {
     }
 
     fieldset {
+        display: flex;
         flex-direction: column;
     }
 }
