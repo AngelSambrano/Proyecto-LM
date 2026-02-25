@@ -1,0 +1,270 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+
+}
+
+main {
+    flex: 1;
+}
+
+
+#menu-toggle {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+.menu {
+
+    flex-direction: row;
+    justify-content: end;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    background-color: #3076d1;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.logo img {
+    transition: transform 0.3s ease;
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+
+    filter: drop-shadow(1px 1px 2px white);
+}
+
+.menu-principal>ul {
+    background-color: rgb(90, 90, 90);
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+    justify-content: flex-end;
+
+}
+
+.menu-principal ul li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    z-index: 1;
+    border-left: #444 solid 2px;
+}
+
+.menu-principal li {
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+.menu-principal li:hover a {
+    transform: scale(1.1);
+}
+
+.menu-principal a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.menu-principal li:last-of-type {
+    border-right: #444 solid 2px;
+}
+
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 100%;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 99;
+}
+
+.dropdown:hover>.submenu {
+    display: block;
+
+}
+
+.submenu>li:hover {
+    text-decoration: underline white;
+    transition: ease-in-out 0.3s;
+    transform: scale(0.9);
+}
+
+.footer-info {
+    background-color: #303030;
+    border-top: 2px solid black;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-info span {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    color: #f9f9f9;
+}
+
+a>.flechas {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: #ffffff;
+    transform: rotate(270deg);
+}
+
+.dropdown:hover>a .flechas,
+.dropdown:active>a .flechas {
+    transform: rotate(360deg);
+    color: chocolate;
+}
+
+.contenedor {
+    width: 500px;
+    height: 450px;
+    display: flex;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 12px 48px;
+    border-style: groove;
+    border: 2px solid gray;
+    align-items: center;
+    opacity: 0.5;
+}
+
+.carrusel img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    transform: scale(0.9);
+}
+
+.carrusel {
+    width: 100%;
+    display: flex;
+    animation: show 16s linear infinite;
+}
+
+.contenedor:hover {
+    opacity: 1;
+}
+
+@keyframes show {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-500%);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .hamburguesa {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 10px;
+        background-color: #830000;
+        text-align: center;
+    }
+
+    .menu-principal ul li {
+        display: block;
+    }
+
+    .menu-principal .menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #menu-toggle:checked~.menu {
+        display: flex;
+    }
+
+    .submenu {
+        width: 100%;
+        background-color: #eee;
+        text-align: center;
+        display: none;
+        position: static;
+    }
+
+    .dropdown:hover>.submenu {
+        display: block;
+    }
+
+    .menu-principal a {
+        text-align: center;
+        border-left: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .menu li:hover {
+        text-decoration: underline white;
+    }
+
+    .dropdown:hover>a .flechas {
+        transform: rotate(0deg);
+        color: chocolate;
+    }
+
+    .menu-principal .submenu a {
+        font-size: 0.9em;
+        color: #303030;
+        border-right: #444 solid 2px;
+        border-left: #444 solid 2px;
+    }
+
+    .menu-principal li:last-of-type {
+        border-right: none;
+    }
+
+    .contenedor {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .carrusel img {
+        width: 300px;
+    }
+
+}

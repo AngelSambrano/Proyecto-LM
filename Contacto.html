@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos!</title>
+    <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/Contacto.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="Imagenes/Gemini_Generated_Image_z2xxl6z2xxl6z2xx.png"
+                    alt="Logotipo de mi web"></a>
+        </div>
+
+        <nav class="menu-principal">
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburguesa">&#9776;</label>
+
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Productos.html">Productos</a></li>
+                <li class="dropdown">
+                    <a href="#">Servicios<span class="flechas">&#9662;</span></a>
+                    <ul class="submenu">
+                        <li><a href="HTML4.html">Mejoras</a></li>
+                        <li><a href="HTML5.html">Limpieza</a></li>
+                        <li><a href="HTML6.html">Reemplazo</a></li>
+                    </ul>
+                </li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <form action="#" method="post">
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                <label for="sucursal">Sucursal en Madrid:</label>
+                <select id="sucursal" name="sucursal">
+                    <option value="centro">Madrid Centro</option>
+                    <option value="norte">Madrid Norte (Alcobendas)</option>
+                    <option value="sur">Madrid Sur (Getafe)</option>
+                </select>
+
+                <fieldset>
+                    <legend>Tipo de Equipo:</legend>
+                    <input type="radio" id="Ordenador" name="equipo" value="Ordenador">
+                    <label for="Ordenador">Ordenador</label>
+
+                    <input type="radio" id="Consola" name="equipo" value="Consola">
+                    <label for="Consola">Consola</label>
+
+                    <input type="radio" id="Impresora" name="equipo" value="Impresora">
+                    <label for="Impresora">Impresora</label>
+                </fieldset>
+
+                <fieldset class="grupo-checkbox">
+                    <legend>Servicios interesados:</legend>
+                    <div class="opcion">
+                        <input type="checkbox" id="Mejoras" name="servicio" value="mejoras">
+                        <label for="Mejoras">Mejorar equipo</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="Reemplazo" name="servicio" value="reemplazo">
+                        <label for="Reemplazo">Reemplazo de piezas</label>
+                    </div>
+                    <div class="opcion">
+                        <input type="checkbox" id="Limpieza" name="servicio" value="limpieza">
+                        <label for="Limpieza">Limpieza y Mantenimiento</label>
+                    </div>
+                </fieldset>
+
+                <label for="comentarios">Observaciones adicionales:</label>
+                <textarea id="comentarios" name="comentarios" rows="5"
+                    placeholder="Cuéntanos más sobre el estado de tu equipo..."></textarea>
+
+                <div class="botones">
+                    <button type="submit">Enviar Solicitud</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <span>&copy; 2024 Proyecto LM Dual - Todos los derechos reservados.</span>
+            <span>Siguenos en redes sociales (Requisito SEO Off-Page)</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
