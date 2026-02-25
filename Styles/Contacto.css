@@ -45,6 +45,7 @@ fieldset {
     gap: 12px;
     margin-bottom: 8px;
     cursor: pointer;
+    white-space: nowrap;
 }
 
 input[type="radio"],
@@ -84,4 +85,6 @@ select option {
     .botones {
         flex-direction: column;
     }
+
+
 }
