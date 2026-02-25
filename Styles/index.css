@@ -202,8 +202,9 @@ a>.flechas {
         font-size: 30px;
         cursor: pointer;
         padding: 10px;
-        background-color: #830000;
+        background-color: #000b83c1;
         text-align: center;
+        color: white;
     }
 
     .menu-principal ul li {
