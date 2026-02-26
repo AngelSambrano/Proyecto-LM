@@ -1,0 +1,13 @@
+Mes,Semana,Canal,Tipo de Publicación,Temática Sugerida,Objetivo SEO
+Mes 1,1 a 4,Blog,Artículo Técnico,"Mantenimiento preventivo: Alarga la vida de tu PC",Keyword Density y Relevancia
+Mes 1,1 a 4,RSS,Actualización Feed,"Sindicación automática de nuevos servicios",Indexación rápida
+Mes 2,5 a 8,Social Media,Infografía,"Guía rápida: ¿Cuándo cambiar la pasta térmica?",Engagement y Señales Sociales
+Mes 2,5 a 8,Blog,Tutorial,"Pasos para optimizar la velocidad de tu portátil",Autoridad On-Page
+Mes 3,9 a 12,Article Marketing,Post de Invitado,"El futuro de la reparación de hardware en 2026",Backlinks (SEO Off-Page)
+Mes 3,9 a 12,Social Media,Video Corto,"Review: Nuevos componentes disponibles en catálogo",Tráfico de Referencia
+Mes 4,13 a 16,Blog,Comparativa,"Repuestos originales vs. compatibles: Lo que debes saber",Conversión y Trust
+Mes 4,13 a 16,RSS,Newsletter Técnica,"Resumen mensual de soluciones de soporte",Retención de Usuarios
+Mes 5,17 a 20,Article Marketing,Reseña Externa,"Tech Repair Hub: Calidad garantizada en sustitución de piezas",Autoridad de Dominio
+Mes 5,17 a 20,Social Media,Caso de Éxito,"Antes y Después: Reparación de chasis y pantalla",Social Proof
+Mes 6,21 a 24,Blog,Guía de Compra,"Cómo elegir la mejor tarjeta gráfica para tu equipo",Long-tail Keywords
+Mes 6,21 a 24,Social Media,Live Q&A,"Preguntas y respuestas sobre fallos comunes de hardware",Branding y Autoridad
