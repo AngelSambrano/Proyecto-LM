@@ -158,11 +158,13 @@ a>.flechas {
 
 .contenedor {
     width: 500px;
-    height: 450px;
+    height: 400px;
     display: flex;
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 12px 48px;
+    border-radius: 24px;
+    background: rgb(255, 255, 255);
+    ;
     border-style: groove;
     border: 2px solid gray;
     align-items: center;
@@ -185,6 +187,166 @@ a>.flechas {
 .contenedor:hover {
     opacity: 1;
 }
+
+.bloque-contenido {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.bloque-contenido h1 {
+    color: #000000;
+    font-size: 2rem;
+}
+
+
+
+.hero-servicios {
+    width: 100%;
+    min-height: 450px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a1a 0%, #3076d1 50%, #1a1a1a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-img-oscuro {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.100);
+    z-index: 1;
+}
+
+.hero-servicios h2 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    z-index: 2;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 0 20px;
+}
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    color: #3076d1;
+
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact-preview {
+    background-color: #f4f4f4;
+
+    padding: 60px 10%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+    gap: 40px;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-text {
+    flex: 2;
+}
+
+.contact-text h3 {
+    font-size: 2rem;
+    color: #3076d1;
+    margin-top: 0;
+}
+
+.contact-text p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.btn-contacto {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #3076d1;
+    color: white !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-contacto:hover {
+    background-color: #255cad;
+    transform: translateY(-3px);
+}
+
+
 
 @keyframes show {
     0% {
@@ -266,6 +428,14 @@ a>.flechas {
 
     .carrusel img {
         width: 300px;
+    }
+
+    .hero-servicios {
+        height: 250px;
+    }
+
+    .hero-servicios h2 {
+        font-size: 1.8rem;
     }
 
 }
